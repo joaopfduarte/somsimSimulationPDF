@@ -1,0 +1,147 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Intro to LaTeX and Template for Homework Assignments
+%% Quantitative Methods in Political Science
+%% University of Mannheim
+%% Fall 2017
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% created by Marcel Neunhoeffer & Sebastian Sternberg
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1. Document Class
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,12pt]{article} % Define o estilo do documento
+
+% Pacote para formatação bibliográfica no modelo Chicago
+\usepackage[style=chicago-authordate]{biblatex}
+\addbibresource{../bibfile.bib} % Base de dados bibliográficos
+
+% Pacotes necessários
+\usepackage[brazil]{babel}
+\usepackage{amsmath} % Para inserir modelos matemáticos
+\usepackage{geometry} % Define as margens
+\geometry{top=2cm, bottom=2cm, left=2.5cm, right=2.5cm}
+\usepackage{multirow, booktabs} % Para criar tabelas
+\usepackage{graphicx} % Para incluir gráficos e imagens
+\usepackage{setspace} % Para ajuste de espaçamento
+\usepackage{float} % Para controle da posição de figuras
+\usepackage{fancyhdr} % Para criar cabeçalhos e rodapés personalizados
+\usepackage{gensymb} % Para inserção de valores em graus Celsius
+\usepackage{hyperref} % Para criar links e referências no documento
+\usepackage{listings} % Para inserção de códigos
+\usepackage{xcolor} % Para definição de cores
+\usepackage{microtype} % Para tipografia melhorada
+\usepackage{titlesec}
+
+\titlespacing*{\section}{0pt}{*1}{*0.5}
+\titlespacing*{\subsection}{0pt}{*0.8}{*0.4}
+\titlespacing*{\subsubsection}{0pt}{*0.6}{*0.3}
+\setlength{\parskip}{0pt}
+
+
+\hypersetup{
+    colorlinks=true,      % ativa as cores dos links
+    linkcolor=black,       % cor dos links internos
+    urlcolor=black,        % cor dos links externos
+    citecolor=black        % cor das citações
+}
+
+\lstset{
+    language=C,                        % Linguagem de programação
+    basicstyle=\ttfamily\footnotesize, % Fonte do código
+    keywordstyle=\color{blue},         % Cor das palavras-chave
+    stringstyle=\color{green!60!black},% Cor das strings
+    commentstyle=\color{gray},         % Cor dos comentários
+    numbers=left,                      % Números das linhas à esquerda
+    numberstyle=\tiny\color{gray},     % Estilo dos números das linhas
+    stepnumber=1,                      % Intervalo entre números das linhas
+    breaklines=true,                   % Quebra automática de linha
+    frame=single,                      % Moldura ao redor do código
+    tabsize=4,                         % Tamanho do tab
+    captionpos=b,                      % Posição da legenda (b = abaixo)
+    showspaces=false,                  % Não mostra espaços com sublinhados
+    showstringspaces=false,            % Não mostra espaços em strings
+    morekeywords={printf, scanf},      % Palavras-chave adicionais
+}
+
+% Configurações de cabeçalho e rodapé
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\footnotesize Cefet-MG: L06CSD - Solução da lista de exercícios IX}
+\cfoot{\footnotesize \thepage}
+
+% Configuração para evitar indentação de parágrafos
+\setlength{\parindent}{0in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 4. Início do Documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Seção de Título
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thispagestyle{empty} % Desativa cabeçalho na primeira página
+
+\begin{tabular}{p{\textwidth}}
+{\large \textbf{Laboratório de Sistemas Operacionais}} \\
+Centro Federal de Educação Tecnológica de Minas Gerais \\
+30 de dezembro de 2024 \\ Campus Timóteo \\
+\hline
+\end{tabular}
+
+\vspace*{0.3cm}
+
+\begin{center}
+    {\Large \textbf{Simulação das atividades com SOsim}}
+    \vspace{2mm}
+    
+    % Nomes dos autores
+    {\textbf{João Pedro Ferreira Duarte}}
+\end{center}
+\vspace{0.4cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Corpo do Documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection[]{Criação de processos}
+\subsubsection[]{Práticas de simulação}
+\subsubsection[]{Análise prática}
+\subsubsection[]{Questão teórica}
+
+\subsection[]{Tipos de processos}
+\subsubsection[]{Práticas de simulação}
+\subsubsection[]{Análise prática}
+\subsubsection[]{Questão teórica}
+
+\subsection[]{PCB}
+\subsubsection[]{Práticas de simulação}
+\subsubsection[]{Análise prática}
+\subsubsection[]{Questão teórica}
+
+\subsection[]{Estatísticas}
+\subsubsection[]{Práticas de simulação}
+\subsubsection[]{Análise prática}
+\subsubsection[]{Questão teórica}
+
+\subsection[]{Log de execução de processos}
+\subsubsection[]{Práticas de simulação}
+\subsubsection[]{Análise prática}
+\subsubsection[]{Questão teórica}
+
+\subsection[]{Suspensão e eliminação de processos}
+\subsubsection[]{Práticas de simulação}
+\subsubsection[]{Análise prática}
+\subsubsection[]{Questão teórica}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Referências e Bibliografia
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+\printbibliography
+
+\end{document}
